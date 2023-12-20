@@ -10,34 +10,34 @@
   <nav id="navBar">
     <h1>The Outer Clove Restaurant</h1>
     <div id="navigation">
-      <p class="highlight">Promotions</p>
-      <p>Menu</p>
-      <p>Facilities</p>
-      <p>Reservations</p>
-      <p>Contact</p>
+      <a href="promotions.html" class="nav-link highlight">Promotions</a>
+      <a href="menu.html" class="nav-link">Menu</a>
+      <a href="facilities.html" class="nav-link">Facilities</a>
+      <a href="reservations.html" class="nav-link">Reservations</a>
+      <a href="contact.html" class="nav-link">Contact</a>
     </div>
     <div class="icons">
-      <img src="images/user.png">
-      <img src="images/search.png">
-      <img src="images/shopping-bag.png">
+      <img href="login.html" class="nav-link highlight" src="images/user.png">
+      <img href="search.html" class="nav-link highlight" src="images/search.png">
+      <img href="reservations.html" class="nav-link highlight" src="images/shopping-bag.png">
     </div>
   </nav>
   <section id="heroGrid">
     <div id="featuredProduct" class="heroGridArea">
       <div id="headline">
-        <h3 id="newCollection">Specials</h3>
+        <h3  id="newCollection">Specials</h3>
         <h2>Delicious Offerings</h2>
         <p>Explore our featured dishes, carefully crafted for your delight.</p>
       </div>
     </div>
     <div id="secondaryProduct" class="heroGridArea"></div>
     <div id="CTA" class="heroGridArea">
-        <h4>Order Now</h4>
+        <h4>Reserve Now</h4>
         <img src="images/arrow-right.png">
       </div>
   </section>
   <div class="subHeading">
-      <h3>Discover Our Cuisine</h3>
+      <h3  class="h3">Discover Our Cuisine</h3>
   </div>
   <section id="categoryGrid">
     <div id="appetizers" class="categoryGridArea">
@@ -57,29 +57,36 @@
     </div>
   </section>
 
-  <section id="promotions">
-    <h3>Promotions</h3>
+  <!-- Promotions Section -->
+<section id="promotions">
+  <h3 class="h3">Featured Promotions</h3>
+  <div class="promo">
     <div class="promotion-box">
-      <img src="path/to/promotion1.jpg" alt="Promotion 1">
-      <p>Description of Promotion 1.</p>
+      <a href="promotion1.html" class="promotion-box">
+        <img src="/images/promotion1.jpg" alt="Promotion 1">
+        <p>Explore our latest promotion offering - a delightful culinary journey awaits you. Don't miss out on this limited-time opportunity to savor extraordinary flavors at an exceptional value.</p>
+      </a>
     </div>
     <div class="promotion-box">
-      <img src="path/to/promotion2.jpg" alt="Promotion 2">
-      <p>Description of Promotion 2.</p>
+      <img src="/images/promotion2.jpg" alt="Promotion 2">
+      <p>Indulge in luxury with our second featured promotion. Immerse yourself in a world of gastronomic excellence with unique dishes and exclusive discounts. Elevate your dining experience with 'The Outer Clove.'</p>
     </div>
     <!-- Add more promotion boxes as needed -->
-  </section>
+  </div>
+  
+</section>
+
 
   <!-- Feedback Section -->
   <section id="feedback">
-    <h3>Customer Feedback</h3>
+    <h3 class="h3">Customer Feedback</h3>
     <div class="feedback-box">
-      <img src="path/to/customer1.jpg" alt="Customer 1">
+      <img src="/images/user 2.png" alt="Customer 1">
       <p>Excellent service! The food was amazing.</p>
       <div class="stars">★★★★★</div>
     </div>
     <div class="feedback-box">
-      <img src="path/to/customer2.jpg" alt="Customer 2">
+      <img src="/images/user 4.png" alt="Customer 2">
       <p>Great ambiance and friendly staff.</p>
       <div class="stars">★★★★☆</div>
     </div>
@@ -87,14 +94,20 @@
 </section>
 
 <section id="contact">
-    <h3>Contact Us</h3>
-    <p>Email: info@outerclove.com</p>
-    <p>Phone: +1 123-456-7890</p>
-    <p>Address: 123 Main Street, Cityville</p>
+    <h3 class="h3">Contact Us</h3>
+    <div class="cont">
+      <div class="conta">
+          <p>Email: info@outerclove.com</p>
+          <p>Phone: +1 123-456-7890</p>
+          <p>Address: 123 Main Street, Cityville</p>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.652075422456!2d-117.29785302373405!3d49.49107885597503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537cb6a67b4952a1%3A0xe9628c94e2a00cb3!2sOuter%20Clove%20Restaurant!5e0!3m2!1sen!2slk!4v1703104280893!5m2!1sen!2slk" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
   </section>
 
   <footer>
-    @prabu
+    <h3 >@prabus</h3>
   </footer>
 </body>
 </html>
