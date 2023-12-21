@@ -121,11 +121,13 @@ body {
   #navBar {
     display: flex;
     flex-direction: row;
-    margin: 0px 5%;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-evenly;
   }
   #navBar h1 {
-    width: 25%;
-    font-weight: 500;
+
+    font-weight: 500px;
   }
   #navigation {
     display: flex;
@@ -160,7 +162,7 @@ body {
   
   .nav-link:hover {
     color: #FF6200; /* Highlight color */
-    filter: blur(5px); /* Blur effect */
+    transform: scale(1.2);
   }
   /* Typography CSS */
   
@@ -180,6 +182,7 @@ body {
     color: white;
     font-weight: 400;
     font-size: 22px;
+    z-index: 3;
   }
   
   #headline p {
@@ -238,58 +241,66 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  
-  /* Promotions Section */
-  #promotions {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
+ /* Promotions Section */
+#promotions {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
 
-  }
-  .h3{
-    text-align: center;
-    border-bottom: 2px solid black;
-    width: 300px;
-    margin: 50px auto;
-  }
-  .promo{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .promotion-box {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid orange;
-    border-radius: 8px;
-    background-color: rgba(red, green, blue, alpha);
-    text-decoration: none;
+.h3 {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
+
+.promo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.promo1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.promotion-box {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid orange;
+  border-radius: 8px;
+  background-color: rgba(red, green, blue, alpha);
+  text-decoration: none;
   color: inherit;
   transition: color 0.3s ease, filter 0.3s ease;
-  }
-  .promotion-box:hover {
-    color: #FF6200; /* Highlight color */
-    filter: blur(5px); /* Blur effect */
-  }
-  
-  .promotion-box img {
-    max-width: 100%;
-    border-radius: 8px;
-    width: 300px;
-    height: 300px;
-    margin-top: 10px;
-    border: 5px solid orange;
-    border-radius: 8px;
-  }
-  
+}
+
+.promotion-box img:hover {
+  color: #FF6200;
+  transform: scale(1.15);
+}
+
+.promotion-box img {
+  max-width: 100%;
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  border: 5px solid orange;
+  border-radius: 8px;
+}
+
   /* Contact Section */
   #contact {
     text-align: center;
@@ -357,10 +368,13 @@ footer {
   transition: color 0.3s ease, filter 0.3s ease;
 }
 
-#CTA:hover,
+#CTA img:hover{
+  transform: scale(1.2);
+  color: #FF6200;
+}
 .categoryGridArea:hover {
   color: #FF6200; /* Highlight color */
-  filter: blur(5px); /* Blur effect */
+  filter: blur(1px); /* Blur effect */
 }
 
 /* Login Section */
