@@ -362,3 +362,74 @@ footer {
   color: #FF6200; /* Highlight color */
   filter: blur(5px); /* Blur effect */
 }
+
+/* Login Section */
+#login {
+  text-align: center;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+#signup{
+  text-align: center;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.signupForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.loginForm select,.signupForm select,.signupForm input,
+.loginForm input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.loginForm button, .signupForm button {
+  background-color: #FF6200;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginForm button:hover,  .signupForm button:hove{
+  background-color: #FF4500; /* Darker shade for hover effect */
+}
+
+.loginForm p,.signupForm p {
+  margin-top: 10px;
+}
+
+#login a, #signup a {
+  color: #FF6200;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.loginForm a:hover, #signup a:hover {
+  text-decoration: underline;
+}
+
