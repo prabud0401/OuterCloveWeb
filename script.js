@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   const users = [
     { userType: 'customer', username: 'customer1', password: 'password1' },
-    { userType: 'admin', username: 'admin1', password: 'password1' }
-    // Add more users as needed
+    { userType: 'admin', username: 'admin1', password: 'password1' },
+    { userType: 'staff', username: 'staff1', password: 'password1' }
+
   ];
 
   const loginForm = document.querySelector('.loginForm');
@@ -23,13 +24,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (user) {
       alert(`Login successful! Welcome, ${user.username} (${user.userType}).`);
-
+// Save username in localStorage
+localStorage.setItem('username', user.username);
       // Redirect to the appropriate dashboard based on user type
       if (user.userType === 'customer') {
         window.location.href = 'customerdashboard.html';
       } else if (user.userType === 'admin') {
-        // Redirect to the admin dashboard or perform other actions as needed
-      }
+        window.location.href = 'admindashboard.html';      }
+        else if (user.userType === 'staff') {
+          window.location.href = 'staffdashboard.html';
+        }
     } else {
       alert('Login failed. Please check your credentials.');
     }
@@ -86,3 +90,16 @@ function signup(userType, fullName, email, username, password, gender, dateOfBir
   alert("Signup successful!");
   window.location.href = "login.html"; // Redirect to login page
 }
+document.addEventListener('DOMContentLoaded', function () {
+  // Retrieve username from localStorage
+  const username = localStorage.getItem('username');
+
+  if (username) {
+    // Display the username in the dashboard
+    document.getElementById('usernamePlaceholder').textContent = username;
+  } else {
+    // Handle the case where username is not available
+    alert('Username not found. Please log in.');
+    window.location.href = 'login.html'; // Redirect to login page
+  }
+});
